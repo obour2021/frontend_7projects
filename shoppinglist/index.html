@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ShoppingListApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List App</title>
+   <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
+   <script type= "text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type= "text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type= "text/css" href="style.css">
+</head>
+<body ng-controller="ListController">
+    <hr>
+    <h3>My Shopping List</h3>
+   <table>
+       <thead>
+               <th>Id</th>
+               <th>Item</th>
+               <th>Deleted</th>
+               <th>Action</th>
+       </thead>
+       <tr ng-repeat="item in list">
+           <td>{{$index + 1}}</td>
+           <td>{{item}}</td>
+           <td>
+            <td><button class="btn btn-primary" ng-click="remove(item)">x</button></td> 
+           </td> 
+        </tr>
+   </table> 
+   <input type="text" ng-model="newItem" placeholder="Add new items here">
+        <button class="btn btn-success" ng-click="addItem(newItem)">Add</button>     
+</body>
+</html>
+
+
+
+
+

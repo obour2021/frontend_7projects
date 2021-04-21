@@ -1,0 +1,55 @@
+*{
+    border:20px;
+    padding:3px;
+    text-align:center;
+}
+
+.gold{
+    background-color: gold;
+}
+.silver{
+    background-color: silver;
+}
+.bronze{
+    background-color: #b08d57;
+}
+.top-area{
+    width: 490px;
+    height: 150px;
+    float: left;
+    border: 3px solid black;
+    margin: 3px 5px;
+    border-radius: 30px;
+}
+.bottom-area{
+    float: left;
+    width: 100%;
+    margin: 10px 0px;
+    border: 10px double black;
+    font-size:30px;
+
+}
+.top-area:hover{
+    opacity: 0.8;
+    border: 5px ridge black;
+    cursor: pointer;
+}
+.bottom-area:hover{
+    opacity: 0.6;
+    border: 10px ridge black;
+    cursor: pointer;
+}
+header{
+    font-size:36px;
+    font-weight:bold;
+
+}
+img:hover{
+    border: 5px ridge black;
+}
+buton{
+    border: 5px ridge black;
+}
+body{
+    color:aqua;
+}

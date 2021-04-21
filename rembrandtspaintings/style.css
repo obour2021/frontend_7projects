@@ -1,0 +1,43 @@
+.big{
+    width: 500px;
+    height: 500px;
+    border-radius: 400px;
+    
+
+}
+button{
+    width: 100px;
+    height: 100px;
+    animation: selectImages 3* infinite;
+    animation:allImages;
+
+}
+.container{
+    padding: 80px 120px;
+    list-style-image: cross-fade();
+    background-color:silver;
+    width: 100%;
+    animation: selectImages 3* infinite;
+    animation:allImages;
+
+}
+header{
+    padding: 30px;
+    font-size:large;
+    font-weight:bold;
+    font-family: sans-serif;
+}
+#body{
+ background-color:antiquewhite;
+}
+
+@keyframes allImages {
+    0%{ opacity: 1.0;}
+    100%{ opacity: 0.4;}
+
+}
+@keyframes selectedImage {
+    0%{ background-color:yellow}
+    50%{  background-color:yellow}
+   100%{ background-color:yellow }
+}

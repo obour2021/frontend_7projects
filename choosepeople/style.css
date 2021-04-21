@@ -1,0 +1,56 @@
+.click-these-area{
+    width: 350px;
+    border: 5px solid green;
+    float: left;
+}
+.click-these-area:hover{
+    opacity: 0.8px;
+}
+
+.it-goes-here-area{
+    width: 350px;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    border: 5px solid red;
+
+}
+.green-top{
+    background-color:green;
+    padding: 3px 10px;
+    color:white;
+}
+.highlight:hover{
+    opacity: 0.5px;
+    font-size: 24px;
+    cursor: copy;
+    font-weight: bold
+}
+
+.red-top{
+    background-color:red;
+    padding: 3px 10px;
+    color:white;
+}
+img{
+    width:100px;
+    border: 2px solid white;
+}
+hr{
+    margin: 5px 2px;
+}
+
+h1{
+    color:blue;
+    text-align:center;
+    font-weight:bold;
+    font-size:25px;
+    
+}
+#ghana{
+    width:500px;
+    height:500px;
+}
+body{
+    background-color:gray;
+}

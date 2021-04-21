@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="filterApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Search</title>
+    <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" type= "text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="app.js"></script>
+</head>
+<body ng-controller="filterController"> 
+        <h1>Please Enter a Name to Search</h1>
+            <hr>
+                <input type="text" placeholder="Search" ng-model="search">
+                <span>{{(leaders | filter:search).length}} of {{leaders.length}}</span>
+            <hr>
+            <div>
+                <span ng-repeat="leader in leaders | filter:search">
+                    <img src="{{leader.pic}}" >
+                </span>
+            </div>
+            <hr>
+            <div class="bottom-line" ng-if="(leaders | filter:search).length < 4">
+             <span ng-repeat="leader in leaders | filter:search | limitTo:1">
+                <span>Looking for</span>
+                <img src="{{leader.pic}}" >
+                <span>{{leader.name}}</span>
+            </span>
+            </div>
+</body>
+</html>

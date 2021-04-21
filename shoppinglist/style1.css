@@ -1,0 +1,12 @@
+h3{
+    background-color:lightskyblue;
+   
+}
+li:hover{
+    background-color:gray ;
+}
+p1{
+    padding:16px;
+    font-weight:bold;
+    font-size:18px;
+}

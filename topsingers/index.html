@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SingersApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Singers</title>
+    <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" type= "text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="app.js"></script>
+</head >
+<body ng-controller="SingersController">
+    <header>Top Singers</header>
+    <center>
+    <div class="top-area">
+        <span>Click to see your</span>
+        <button ng-click="MaleorFemale = 'male'">Male</button>
+        <button ng-click="MaleorFemale = 'female'">Female</button>
+        <span class="top-size"> Famous Singers Pictures</span>
+   </div>
+   <table class="singer-table">
+    <tr ng-repeat="singer in singers" ng-if="singer.gender==MaleorFemale">
+        <td><img  class="singer-pics" src="{{singer.pic}}"></td>
+        <td class="name">{{singer.name}}</td>
+        <td><img class="quality-icon" src="{{singer.quality}}"></td>
+    </tr>
+ </table>
+</center>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.top-size{
+    width: 10px;
+}
+.singer-pics{
+width: 200px;
+height: 100px;
+border: 10px;
+margin-bottom: 10px;
+}
+.singer-pics:hover{
+    background-color:gray;
+    color:white;
+    cursor: pointer;
+}
+.quality-icon{
+    width: 150px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 60px;
+}
+
+.quality-icon:hover{
+    background-color:gray;
+    color:white;
+    cursor: pointer;
+
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.name:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+.singer-table td{
+   border: 2px solid grey;
+   padding: 10px 20px;
+   text-align: center;
+   
+}
+button{
+    width: 100px;
+    height: 60px;
+    margin-top: 20px;
+}
+.top-area{
+    border: 10px solid purple;
+    text-align: center;
+    width: 580px;
+    padding: 10px 20px;
+}
+header{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+body{
+    background-color:lightslategray;
+    color:grey;
+}

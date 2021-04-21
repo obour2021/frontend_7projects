@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RembrandtApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rembrandt's Paintings</title>
+</head>
+  
+    <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>    
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <link rel="stylesheet" type= "text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="app.js"></script>
+  <body id = "body" ng-controller="PaintingsController">    
+    <center>
+        <div class="w3-content">
+    <div >  
+    <header>Rembrandts's Paintings</header>
+    <table>
+        <tr>
+            <td><button ng-click="previous();" class="btn btn-danger">Previous</button></td>
+            <td><img class="big" src="{{paintings[paintingCount]}}" ></td>
+            <td><button ng-click="next();" class="btn btn-success">Next</button></td>
+        </tr>
+    </table>
+     </div>
+    </div>
+     </center>
+</body>
+</html>
